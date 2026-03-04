@@ -111,22 +111,6 @@ src/
 bruno/              # Bruno API collection + Local environment
 ```
 
-## Running tests
-
-```bash
-# Unit tests
-pnpm run test
-
-# Unit tests in watch mode
-pnpm run test:watch
-
-# Coverage
-pnpm run test:cov
-
-# e2e tests
-pnpm run test:e2e
-```
-
 ## Bruno collection
 
 A Bruno collection is available in the `bruno/` directory.
