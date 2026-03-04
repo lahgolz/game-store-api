@@ -1,0 +1,29 @@
+meta {
+  name: games-list
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/games
+  body: none
+  auth: none
+}
+
+params:query {
+  ~genre: Platformer
+  ~platform: PC
+  ~stock: available
+  ~sortBy: price
+  ~order: asc
+  ~page: 1
+  ~limit: 10
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+settings {
+  encodeUrl: true
+}

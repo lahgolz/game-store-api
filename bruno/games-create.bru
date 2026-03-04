@@ -1,0 +1,35 @@
+meta {
+  name: games-create
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/games
+  body: json
+  auth: none
+}
+
+headers {
+  x-api-key: {{adminApiKey}}
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "title": "Balatro",
+    "studio": "LocalThunk",
+    "genres": ["Roguelite", "Card Game", "Strategy"],
+    "platforms": ["PC", "Switch", "PS4", "PS5", "Xbox One", "Xbox Series X", "Mobile"],
+    "releaseDate": "2024-02-20",
+    "price": 15.99,
+    "metacritic": 90,
+    "stock": "available",
+    "dlcs": [],
+    "synopsis": "A hypnotically satisfying roguelite poker game where you play illegal poker hands, discover powerful jokers, and create ever-more absurd synergies."
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,27 @@
+meta {
+  name: games-update
+  type: http
+  seq: 10
+}
+
+patch {
+  url: {{baseUrl}}/games/{{gameId}}
+  body: json
+  auth: none
+}
+
+headers {
+  x-api-key: {{adminApiKey}}
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "price": 9.99,
+    "stock": "out_of_stock"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

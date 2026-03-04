@@ -1,0 +1,19 @@
+meta {
+  name: auth-delete-account
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/auth/account
+  body: none
+  auth: none
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+settings {
+  encodeUrl: true
+}

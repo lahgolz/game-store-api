@@ -1,0 +1,19 @@
+meta {
+  name: games-delete
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{baseUrl}}/games/{{gameId}}
+  body: none
+  auth: none
+}
+
+headers {
+  x-api-key: {{adminApiKey}}
+}
+
+settings {
+  encodeUrl: true
+}

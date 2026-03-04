@@ -1,0 +1,19 @@
+meta {
+  name: auth-regenerate-key
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/auth/regenerate-key
+  body: none
+  auth: none
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+settings {
+  encodeUrl: true
+}

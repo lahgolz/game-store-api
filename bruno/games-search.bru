@@ -1,0 +1,23 @@
+meta {
+  name: games-search
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/games/search
+  body: none
+  auth: none
+}
+
+params:query {
+  q: Hollow Knight
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+settings {
+  encodeUrl: true
+}

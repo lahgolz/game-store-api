@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "game-store-api",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

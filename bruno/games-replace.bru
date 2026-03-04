@@ -1,0 +1,35 @@
+meta {
+  name: games-replace
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{baseUrl}}/games/{{gameId}}
+  body: json
+  auth: none
+}
+
+headers {
+  x-api-key: {{adminApiKey}}
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "title": "Hollow Knight",
+    "studio": "Team Cherry",
+    "genres": ["Metroidvania", "Action", "Platformer"],
+    "platforms": ["PC", "Switch", "PS4"],
+    "releaseDate": "2017-02-24",
+    "price": 14.99,
+    "metacritic": 90,
+    "stock": "available",
+    "dlcs": ["Godmaster", "Lifeblood"],
+    "synopsis": "Forge your own path in Hollow Knight, a challenging, beautifully hand-drawn action-adventure."
+  }
+}
+
+settings {
+  encodeUrl: true
+}

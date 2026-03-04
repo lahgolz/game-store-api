@@ -1,0 +1,19 @@
+meta {
+  name: games-get-one
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/games/{{gameId}}
+  body: none
+  auth: none
+}
+
+headers {
+  x-api-key: {{apiKey}}
+}
+
+settings {
+  encodeUrl: true
+}
